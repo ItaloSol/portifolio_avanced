@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0b0c1b, #1c1d31);
+  color: #e5e5e5;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.code-lines {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.code-lines:nth-child(odd) {
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px),
+              radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  z-index: -2;
+}
+
+.planets {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #00d4ff, #1e1e2f);
+  border-radius: 50%;
+  box-shadow: 0 0 25px #00d4ff;
+  animation: rotate 20s linear infinite;
+  z-index: -3;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: line-animation 5s linear infinite;
+  top: 0;
+  z-index: -1;
+}
+
+@keyframes line-animation {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(500px) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(1000px) scale(0);
+    opacity: 0;
+  }
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(5px);
+  animation: line-trail 5s linear infinite;
+}
+
+@keyframes line-trail {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(500px) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(1000px) scale(0);
+    opacity: 0;
+  }
+}
+
+.skill {
+  @apply bg-[#2a2a40] rounded-lg text-center text-gray-300 shadow-md transition-all duration-300;
+}
+
+.skill:hover {
+  @apply bg-[#00d4ff] text-black transform -translate-y-1;
+}
+
+
+
+.card {
+  @apply bg-[#232336] rounded-lg p-6 mb-4 shadow-lg transition-all duration-300;
+}
+
+.card:hover {
+  @apply transform -translate-y-1 shadow-xl;
+}
+
+.project-card {
+  @apply bg-[#2a2a40] rounded-lg p-4 text-center shadow-md;
+}
+
+.project-card img {
+  @apply rounded-lg mb-4 w-full h-auto object-cover;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .planets {
+    width: 150px;
+    height: 150px;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .section {
+    @apply px-4;
+  }
+}
