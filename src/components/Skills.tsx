@@ -6,7 +6,7 @@ const skills = [
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'
   },
   {
-    name: 'JavaScript ES6',
+    name: 'JavaScript',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
   },
   {
