@@ -36,6 +36,10 @@ const skills = [
   {
     name: 'API REST',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg'
+  },
+  {
+    name: 'Tailwind CSS',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
   }
 ];
 
