@@ -1,6 +1,7 @@
 import React from 'react';
 import { AnimatedText } from './AnimatedText';
 import { ScrollFloat } from './ScrollFloat';
+import Magnet from './Magnet';
 import {  Download, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 export const Contact: React.FC = () => {
   return (
@@ -74,16 +75,20 @@ export const Contact: React.FC = () => {
       </section>
 
       <section className="py-20">
+        
         <div className="container mx-auto px-4 text-center">
+        <Magnet padding={2660} disabled={false} magnetStrength={9}>
           <ScrollFloat>
             <a
-              href="#"
+              target='_blank'
+              href="Italo_Sol_Desenvolvedor_web_pleno_Portfolio.pdf"
               className="inline-flex items-center space-x-2 bg-primary hover:bg-primary-dark px-8 py-4 rounded-lg text-xl font-bold transition-colors"
             >
               <Download />
               <span>Baixar Currículo</span>
             </a>
           </ScrollFloat>
+          </Magnet>
         </div>
       </section>
     </>

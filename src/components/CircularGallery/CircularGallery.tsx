@@ -508,32 +508,26 @@ class App {
     const defaultItems = [
       {
         text: 'Dentista SorrirMais',
-        period: 'fev de 2025 - fev de 2025',
-        description: 'Desenvolvimento de scripts de automação em Python para otimização de processos.',
         image: 'src/img/dentista.png'
       },
       {
+        text: 'Pesquisa de Satisfação',
+        image: 'src/img/pesquisa_de_satisfacao.png'
+      },
+      {
         text: 'Automação de tarefa em python',
-        period: 'fev de 2025 - fev de 2025',
-        description: 'Desenvolvimento de scripts de automação em Python para otimização de processos.',
         image: 'src/img/capa-python.jpg'
       },
       {
         text: 'Sistema SIGRAFEX',
-        period: 'out de 2022 - jun de 2024',
-        description: 'Sistema de Gerenciamento e Controle de Produção Gráfica desenvolvido para o Exército Brasileiro.',
         image: 'src/img/sisgrafex.jpg'
       },
       {
         text: 'Portfólio Grafex',
-        period: 'dez de 2024 - dez de 2024',
-        description: 'Desenvolvimento de portfólio online para apresentação dos trabalhos da Grafex.',
         image: 'src/img/portifolio.jpg'
       },
       {
         text: 'Sistema de Escala Militar',
-        period: 'nov de 2021 - jun de 2022',
-        description: 'Sistema de gerenciamento de escalas de serviço para militares.',
         image: 'src/img/escala.jpg'
       },
     ];

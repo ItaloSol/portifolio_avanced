@@ -25,7 +25,22 @@ export const Experience: React.FC = () => {
               className="text-gray-400 mb-4"
             />
             <p className="text-gray-300">
-              Desenvolvimento de sistemas híbridos e sistemas de gerenciamento utilizando PHP, Laravel, Vue.js, JavaScript, Node.js e MySQL.
+            🔹 Desenvolvimento de sistemas híbridos e sistemas de gerenciamento utilizando PHP, Laravel, Vue.js, JavaScript, Node.js e MySQL.
+            </p>
+            <p className="text-gray-300">
+            🔹 Redução de custos e otimização de processos produtivos através da automação e gerenciamento eficiente de recursos.
+            </p>
+            <p className="text-gray-300">
+            🔹 Implementação de APIs REST para integração entre sistemas e melhoria da comunicação entre plataformas.
+            </p>
+            <p className="text-gray-300">
+            🔹 Automatização de tarefas repetitivas com Python e Selenium, aumentando a eficiência operacional.
+            </p>
+            <p className="text-gray-300">
+            🔹 Criação de interfaces intuitivas e responsivas para sistemas web, garantindo melhor experiência do usuário.
+            </p>
+            <p className="text-gray-300">
+            🔹 Desenvolvimento de scripts para processamento de dados e geração automática de relatórios gerenciais.
             </p>
           </div>
         </ScrollFloat>
