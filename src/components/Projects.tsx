@@ -8,7 +8,7 @@ const projects = [
     description: 'um site moderno e responsivo para a Clínica de Dentária SorrirMais, com uma interface elegante que transmite confiança e profissionalismo.',
     period: 'fev de 2025 - mar de 2025',
     association: 'Freelancer',
-    image: 'src/img/dentista.png',
+    image: './img/dentista.png',
     alt: 'Imagem do site desenvolvido para a Clínica SorriMais',
     details: `Desenvolvi um site moderno e responsivo para a Clínica de Dentária SorrirMais, com uma interface elegante que transmite confiança e profissionalismo. O projeto teve como objetivo modernizar a presença digital da clínica, facilitando o acesso às informações e convertendo visitantes em clientes, através de um agendamento via WhatsApp simples e intuitivo.
 
@@ -41,7 +41,7 @@ skills: [
     description: 'A Gráfica do Exército (Grafex) precisava de um sistema para medir a satisfação dos clientes e obter feedbacks valiosos sobre seus serviços.',
     period: 'fev de 2025 - fev de 2025',
     association: 'Exército Brasileiro',
-    image: 'src/img/pesquisa_de_satisfacao.png',
+    image: './img/pesquisa_de_satisfacao.png',
     alt: 'Imagem do site desenvolvido para pesquisa de satisfação',
     details: `🚀 100% Coleta de Satisfação
 🎯 Pesquisa de Satisfação Online
@@ -76,7 +76,7 @@ skills: [
     description: 'Um script Python que interage com sistemas web, preenche formulários e gera relatórios conforme o dia da semana.',
     period: 'fev de 2025 - fev de 2025',
     association: 'Exército Brasileiro',
-    image: 'src/img/capa-python.jpg',
+    image: './img/capa-python.jpg',
     alt: 'Imagem ilustrativa da atuomatização em python desenvolvido para a Grafex',
     details: `Desenvolvi um sistema de automação para otimizar processos internos da Gráfica do Exército (Grafex), reduzindo tarefas repetitivas e erros manuais. O script automatiza preenchimento de formulários e geração de relatórios, aumentando significativamente a eficiência operacional.
 
@@ -115,7 +115,7 @@ skills: [
     title: 'Sistema de Gerenciamento e Controle de Produção Gráfica (SIGRAFEX)',
     period: 'out de 2022 - jun de 2024',
     association: 'Exército Brasileiro',
-    image: 'src/img/sisgrafex.jpg',
+    image: './img/sisgrafex.jpg',
     alt: 'Imagem ilustrativa do sistema SIGRAFEX',
     details: `O SIGRAFEX foi desenvolvido para automatizar e otimizar a gestão de produção gráfica da Gráfica do Exército. Este sistema centralizou orçamentos, controle de produção e gerenciamento de estoque, aumentando eficiência e reduzindo custos operacionais.
 
@@ -161,7 +161,7 @@ skills: [
     description: 'Transformando a Comunicação Digital da Gráfica do Exército',
     period: 'dez de 2024 - dez de 2024',
     association: 'Exército Brasileiro',
-    image: 'src/img/portifolio.jpg',
+    image: './img/portifolio.jpg',
     alt: 'Imagem ilustrativa do portfólio online',
     details: `🚀100% de Melhoria na Visibilidade Digital da GrafEx.
 🎯 Portfólio Digital.
@@ -199,7 +199,7 @@ skills: [
     title: 'Sistema de Escala de Serviço Militar',
     period: 'nov de 2021 - jun de 2022',
     association: 'Exército Brasileiro',
-    image: 'src/img/escala.jpg',
+    image: './img/escala.jpg',
     alt: 'Imagem ilustrativa do sistema de escala de serviço militar',
     details: `Desenvolvi um sistema automatizado de escala de serviço militar, distribuindo tarefas e missões entre os militares da Gráfica do Exército. Com isso, a organização da escala de trabalho tornou-se mais eficiente e transparente.
 

@@ -508,27 +508,27 @@ class App {
     const defaultItems = [
       {
         text: 'Dentista SorrirMais',
-        image: 'src/img/dentista.png'
+        image: './img/dentista.png'
       },
       {
         text: 'Pesquisa de Satisfação',
-        image: 'src/img/pesquisa_de_satisfacao.png'
+        image: './img/pesquisa_de_satisfacao.png'
       },
       {
         text: 'Automação de tarefa em python',
-        image: 'src/img/capa-python.jpg'
+        image: './img/capa-python.jpg'
       },
       {
         text: 'Sistema SIGRAFEX',
-        image: 'src/img/sisgrafex.jpg'
+        image: './img/sisgrafex.jpg'
       },
       {
         text: 'Portfólio Grafex',
-        image: 'src/img/portifolio.jpg'
+        image: './img/portifolio.jpg'
       },
       {
         text: 'Sistema de Escala Militar',
-        image: 'src/img/escala.jpg'
+        image: './img/escala.jpg'
       },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
