@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { AboutMe } from './components/AboutMe';
 import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
@@ -6,21 +7,30 @@ import { Galerya } from './components/Galerya';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Header } from './components/Header';
+import { ThemeToggle } from './components/ThemeToggle';
+import { FloatingThemeToggle } from './components/FloatingThemeToggle';
+import { ClientRedirect } from './components/ClientRedirect';
 function App() {
+  const [isRecruiter, setIsRecruiter] = useState(true);
+
+  const handleToggle = () => setIsRecruiter(!isRecruiter);
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Header />
-  
+      
+      <Header isRecruiter={isRecruiter}/>
+      <ThemeToggle isRecruiter={isRecruiter} onToggle={handleToggle} />
+      <FloatingThemeToggle isRecruiter={isRecruiter} onToggle={handleToggle} />
       {/* Conteúdo abaixo do Header */}
       <div className="relative z-10">
         <Galerya />
-        <Projects />
-        <AboutMe />
-        <Skills />
-        <Experience />
-        <Education />
+        <Projects isRecruiter={isRecruiter} />
+        {!isRecruiter && <ClientRedirect />}
+        <AboutMe isRecruiter={isRecruiter} />
+        <Skills isRecruiter={isRecruiter}/>
+        {isRecruiter && <Experience />}
+      {isRecruiter && <Education />}
        
-        <Contact />
+      {isRecruiter &&  <Contact />} 
       </div>
       </div>
   );

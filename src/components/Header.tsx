@@ -3,8 +3,10 @@ import { AnimatedText } from './AnimatedText';
 import DecryptedText from './DecryptedText/DecryptedText'
 //import Squares from './Squares';
 import Particles from './Particles/Particles';
-
-export const Header: React.FC = () => {
+interface HeaderProps {
+  isRecruiter: boolean;
+}
+export const Header: React.FC<HeaderProps> = ({ isRecruiter }) => {
   return (
     <>
     <header className="relative min-h-screen flex items-center justify-center">
@@ -23,17 +25,17 @@ export const Header: React.FC = () => {
 
   {/* Conteúdo do Header */}
   <div className="relative z-10 container mx-auto px-4 text-center">
-    <AnimatedText
-      text="Web Developer"
-      type="split"
-      className="text-6xl font-bold mb-4"
-    />
-    <AnimatedText
-      text="Transformando ideias em realidade digital"
-      type="blur"
-      className="text-2xl text-gray-300"
-    />
-    <DecryptedText
+  <AnimatedText
+            text={isRecruiter ? "Desenvolvedor Web Full Stack" : "Soluções Digitais Personalizadas"}
+            type="split"
+            className="text-6xl font-bold mb-4"
+          />
+          <AnimatedText
+            text={isRecruiter ? "Transformando ideias em realidade digital" : "Criando experiências únicas para seu negócio"}
+            type="blur"
+            className="text-2xl text-gray-300"
+          />
+  <DecryptedText
       text="Ítalo Sol Sclocco Dantas"
       animateOn="view"
       revealDirection="center"
