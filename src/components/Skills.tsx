@@ -2,7 +2,7 @@ import React from "react";
 import { AnimatedText } from "./AnimatedText";
 import { ScrollFloat } from "./ScrollFloat";
 import LetterGlitch from "./LetterGlitch";
-
+import Squares from './Squares';
 
 interface SkillsProps {
   isRecruiter: boolean;
@@ -88,16 +88,25 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
   ];
   const skills = isRecruiter ? recruiterSkills : clientSkills;
   return (
-    <section className="relative py-20 bg-gray-900 overflow-hidden">
+    <section className="relative py-20 bg-sky-600/70 overflow-hidden">
       {/* Efeito LetterGlitch no fundo */}
       <div className="absolute inset-0 z-0 opacity-50">
+         <Squares 
+            speed={0.5} 
+            squareSize={40}
+            direction='up' // up, down, left, right, diagonal
+            borderColor='#fff'
+            hoverFillColor='#222'
+            />
+      {/* {isRecruiter &&
       <LetterGlitch 
+      
   glitchColors={["#ff0000", "#00ff00", "#0000ff"]} // Adicione cores adequadas
   glitchSpeed={50}
   centerVignette={true}
   outerVignette={false}
   smooth={true}
-/>
+/> } */}
       </div>
 
       {/* Conteúdo principal */}
@@ -113,7 +122,7 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
                     alt={`${skill.name} logo`} 
                     className="w-12 h-12 sm:w-16 sm:h-16"
                   /></> ) : ( '' )} 
-                  <span className="text-sm sm:text-base text-white">{skill.name}</span>
+                  <span className="text-sm sm:text-base font-semibold text-white">{skill.name}</span>
                 </div>
               </div>
             </ScrollFloat>

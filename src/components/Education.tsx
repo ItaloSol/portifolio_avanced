@@ -23,7 +23,7 @@ const education = [
 
 export const Education: React.FC = () => {
   return (
-    <section className="py-20 bg-background-light">
+    <section className="py-20 bg-blue-950">
       <div className="container mx-auto px-4">
         <ScrollFloat>
           <h2 className="text-4xl font-bold mb-8">Formação Acadêmica</h2>

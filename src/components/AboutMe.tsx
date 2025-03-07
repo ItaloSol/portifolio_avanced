@@ -9,9 +9,10 @@ export const AboutMe: React.FC<AboutMeProps> = ({ isRecruiter }) => {
   
   return (
    
-    <section className="relative py-20 bg-gray-900 overflow-hidden">
+    <section className="relative py-20 bg-blue-90 overflow-hidden">
       {/* Efeito LetterGlitch no fundo */}
       <div className="absolute inset-0 z-0 opacity-50">
+      {isRecruiter &&
 <Squares 
     speed={0.5} 
     squareSize={40}
@@ -19,6 +20,7 @@ export const AboutMe: React.FC<AboutMeProps> = ({ isRecruiter }) => {
     borderColor='#fff'
     hoverFillColor='#222'
     />
+     }
 </div>
       <div className="relative z-10 container mx-auto px-4">
         <ScrollFloat>

@@ -10,6 +10,7 @@ import { Header } from './components/Header';
 import { ThemeToggle } from './components/ThemeToggle';
 import { FloatingThemeToggle } from './components/FloatingThemeToggle';
 import { ClientRedirect } from './components/ClientRedirect';
+import Squares from './components/Squares';
 function App() {
   const [isRecruiter, setIsRecruiter] = useState(true);
 
@@ -18,6 +19,7 @@ function App() {
     <div className="min-h-screen bg-gray-900 text-white">
       
       <Header isRecruiter={isRecruiter}/>
+     
       <ThemeToggle isRecruiter={isRecruiter} onToggle={handleToggle} />
       <FloatingThemeToggle isRecruiter={isRecruiter} onToggle={handleToggle} />
       {/* Conteúdo abaixo do Header */}

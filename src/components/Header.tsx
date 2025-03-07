@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({ isRecruiter }) => {
   {/* Conteúdo do Header */}
   <div className="relative z-10 container mx-auto px-4 text-center">
   <AnimatedText
-            text={isRecruiter ? "Desenvolvedor Web Full Stack" : "Soluções Digitais Personalizadas"}
+            text={isRecruiter ? "Web Developer" : "Soluções Digitais Personalizadas"}
             type="split"
             className="text-6xl font-bold mb-4"
           />

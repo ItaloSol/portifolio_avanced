@@ -2,6 +2,7 @@ import React from 'react';
 import { AnimatedText } from './AnimatedText';
 import { ScrollFloat } from './ScrollFloat';
 import Magnet from './Magnet';
+import SplashCursor from './SplashCursor'
 import {  Download, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 export const Contact: React.FC = () => {
   return (
@@ -74,8 +75,8 @@ export const Contact: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-20">
-        
+      <section className="py-20 bg-background">
+      <SplashCursor />
         <div className="container mx-auto px-4 text-center">
         <Magnet padding={2660} disabled={false} magnetStrength={9}>
           <ScrollFloat>
