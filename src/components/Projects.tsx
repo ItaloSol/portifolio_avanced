@@ -9,6 +9,60 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ isRecruiter }) => {
   const recruiterProjects = [
     {
+      id: -3,
+      title: 'Site para Vendas de Landing Page',
+      description: 'um site moderno e responsivo para a Vendas de Landing Page, com uma interface elegante que transmite confiança e profissionalismo.',
+      period: 'mar de 2025 - mar de 2025',
+      association: 'Freelancer',
+      image: './src/img/landing-page.png',
+      alt: 'Imagem do site desenvolvido para a Clínica SorriMais',
+      details: `Desenvolvi uma landing page estratégica para divulgar meus serviços freelancer de criação de landing pages. Este projeto foi pensado para ser uma ferramenta de marketing digital, apresentando de forma clara e objetiva:
+
+Por que sua empresa precisa de uma Landing Page?
+Explicação dos benefícios e impactos na presença digital.
+
+Por que escolher nossas Landing Pages?
+Destaque dos diferenciais e resultados comprovados.
+
+Como Trabalhamos:
+Descrição do processo, metodologia e tecnologia utilizada.
+
+Cases de Sucesso:
+Exemplos práticos dos resultados entregues em projetos anteriores.
+
+Valores de Landing Page:
+Planos e preços adaptados às necessidades do cliente.
+
+Perguntas Frequentes:
+Respostas às principais dúvidas para facilitar a decisão.
+
+Solicite uma Proposta & Contato:
+Canal direto para que os clientes possam solicitar informações e agendar consultorias.
+
+🎯Objetivo:
+Convencer pequenas e médias empresas a investir em uma landing page para melhorar sua presença digital, aumentar o tráfego e otimizar estratégias de marketing. O foco é transformar visitantes em leads qualificados e clientes, impulsionando os resultados e os lucros do negócio.
+
+Principais Contribuições:
+
+Desenvolvimento de uma interface moderna e intuitiva, reforçando a credibilidade e a confiabilidade do serviço.
+Estruturação de conteúdos claros e persuasivos, que facilitam a compreensão dos benefícios e geram maior engajamento.
+Otimização da experiência do usuário para maximizar a conversão e a captação de leads.
+  
+  Link para acessar: https://vendalandingpage.web.app/
+  
+  `,
+  skills: [
+    {
+      name: 'React',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+    {
+      name: 'Tailwind CSS',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+    }
+  ]
+    },
+    {
       id: -2,
       title: 'Site para Clínica de Dentária SorrirMais',
       description: 'um site moderno e responsivo para a Clínica de Dentária SorrirMais, com uma interface elegante que transmite confiança e profissionalismo.',
@@ -247,6 +301,60 @@ export const Projects: React.FC<ProjectsProps> = ({ isRecruiter }) => {
     }
   ];
   const clientProjects = [
+    {
+      id: -3,
+      title: 'Site para Vendas de Landing Page',
+      description: 'um site moderno e responsivo para a Vendas de Landing Page, com uma interface elegante que transmite confiança e profissionalismo.',
+      period: 'mar de 2025 - mar de 2025',
+      association: 'Freelancer',
+      image: './src/img/landing-page.png',
+      alt: 'Imagem do site desenvolvido para a Clínica SorriMais',
+      details: `Desenvolvi uma landing page estratégica para divulgar meus serviços freelancer de criação de landing pages. Este projeto foi pensado para ser uma ferramenta de marketing digital, apresentando de forma clara e objetiva:
+
+Por que sua empresa precisa de uma Landing Page?
+Explicação dos benefícios e impactos na presença digital.
+
+Por que escolher nossas Landing Pages?
+Destaque dos diferenciais e resultados comprovados.
+
+Como Trabalhamos:
+Descrição do processo, metodologia e tecnologia utilizada.
+
+Cases de Sucesso:
+Exemplos práticos dos resultados entregues em projetos anteriores.
+
+Valores de Landing Page:
+Planos e preços adaptados às necessidades do cliente.
+
+Perguntas Frequentes:
+Respostas às principais dúvidas para facilitar a decisão.
+
+Solicite uma Proposta & Contato:
+Canal direto para que os clientes possam solicitar informações e agendar consultorias.
+
+🎯Objetivo:
+Convencer pequenas e médias empresas a investir em uma landing page para melhorar sua presença digital, aumentar o tráfego e otimizar estratégias de marketing. O foco é transformar visitantes em leads qualificados e clientes, impulsionando os resultados e os lucros do negócio.
+
+Principais Contribuições:
+
+Desenvolvimento de uma interface moderna e intuitiva, reforçando a credibilidade e a confiabilidade do serviço.
+Estruturação de conteúdos claros e persuasivos, que facilitam a compreensão dos benefícios e geram maior engajamento.
+Otimização da experiência do usuário para maximizar a conversão e a captação de leads.
+  
+  Link para acessar: https://vendalandingpage.web.app/
+  
+  `,
+  skills: [
+    {
+      name: 'React',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+    {
+      name: 'Tailwind CSS',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+    }
+  ]
+    },
     {
       id: -2,
       title: 'Landing Page para Clínica SorrirMais',

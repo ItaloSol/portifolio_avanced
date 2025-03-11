@@ -91,6 +91,7 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
     <section className="relative py-20 bg-sky-600/70 overflow-hidden">
       {/* Efeito LetterGlitch no fundo */}
       <div className="absolute inset-0 z-0 opacity-50">
+      {isRecruiter &&
          <Squares 
             speed={0.5} 
             squareSize={40}
@@ -98,6 +99,7 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
             borderColor='#fff'
             hoverFillColor='#222'
             />
+      }
       {/* {isRecruiter &&
       <LetterGlitch 
       
