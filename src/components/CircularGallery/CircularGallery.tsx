@@ -507,6 +507,10 @@ class App {
   ) {
     const defaultItems = [
       {
+        text: 'Landing Page Vendas',
+        image: './src/img/landing-page.png'
+      },
+      {
         text: 'Dentista SorrirMais',
         image: './src/img/dentista.png'
       },
