@@ -9,13 +9,95 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ isRecruiter }) => {
   const recruiterProjects = [
     {
+      id: -5,
+      title: 'Site para Chales',
+      description: 'um site moderno e responsivo para a Chales, com uma interface elegante que transmite confiança e profissionalismo.',
+      period: 'mar de 2025 - mar de 2025',
+      association: 'Freelancer',
+      image: './src/img/chales.png',
+      alt: 'Imagem do site desenvolvido para a Chales',
+      details: `É com muita satisfação que apresento o projeto Pousada e Chales, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
+
+🏕️ Por que um site é essencial para uma pousada ou Chales?
+Hoje, mais do que nunca, estar presente no digital não é mais um diferencial, mas sim uma necessidade. O novo site da Pousada oferece:
+
+✅ Design intuitivo e responsivo – Experiência impecável em qualquer dispositivo.
+✅ Maior visibilidade e destaque – Superando a concorrência com um site otimizado para SEO.
+✅ Integração direta com WhatsApp – Facilitando reservas de forma rápida e eficiente.
+✅ Galeria de imagens e depoimentos – Criando credibilidade e atraindo mais hóspedes.
+✅ Performance otimizada – Carregamento rápido e experiência fluida.
+
+💡 O impacto do digital no turismo e hospitalidade
+Com um site bem estruturado, a Pousada agora pode alcançar novos clientes, aumentar a taxa de ocupação e oferecer uma experiência mais profissional e atrativa para quem busca um refúgio na natureza.
+
+🔹 Quer levar o seu negócio para o próximo nível?
+Se você tem um hotel, pousada ou qualquer negócio que precisa de mais presença digital, entre em contato! Juntos, podemos criar uma solução sob medida para você.
+
+📢 E você, o que acha da importância do digital para o setor de turismo? Vamos conversar nos comentários! 👇.
+  
+  Link para acessar: https://pousadabvnoprice.netlify.app/
+  
+  `,
+  skills: [
+    {
+      name: 'React',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+    {
+      name: 'Tailwind CSS',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+    }
+  ]
+    },
+    {
+      id: -4,
+      title: 'Site para Camping',
+      description: 'um site moderno e responsivo para a camping, com uma interface elegante que transmite confiança e profissionalismo.',
+      period: 'mar de 2025 - mar de 2025',
+      association: 'Freelancer',
+      image: './src/img/camping.png',
+      alt: 'Imagem do site desenvolvido para a camping',
+      details: `É com muita satisfação que apresento o projeto Pousada e Camping, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
+
+🏕️ Por que um site é essencial para uma pousada ou camping?
+Hoje, mais do que nunca, estar presente no digital não é mais um diferencial, mas sim uma necessidade. O novo site da Pousada oferece:
+
+✅ Design intuitivo e responsivo – Experiência impecável em qualquer dispositivo.
+✅ Maior visibilidade e destaque – Superando a concorrência com um site otimizado para SEO.
+✅ Integração direta com WhatsApp – Facilitando reservas de forma rápida e eficiente.
+✅ Galeria de imagens e depoimentos – Criando credibilidade e atraindo mais hóspedes.
+✅ Performance otimizada – Carregamento rápido e experiência fluida.
+
+💡 O impacto do digital no turismo e hospitalidade
+Com um site bem estruturado, a Pousada agora pode alcançar novos clientes, aumentar a taxa de ocupação e oferecer uma experiência mais profissional e atrativa para quem busca um refúgio na natureza.
+
+🔹 Quer levar o seu negócio para o próximo nível?
+Se você tem um hotel, pousada ou qualquer negócio que precisa de mais presença digital, entre em contato! Juntos, podemos criar uma solução sob medida para você.
+
+📢 E você, o que acha da importância do digital para o setor de turismo? Vamos conversar nos comentários! 👇.
+  
+  Link para acessar: https://pousadabjnoprice.netlify.app/
+  
+  `,
+  skills: [
+    {
+      name: 'React',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+    {
+      name: 'Tailwind CSS',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+    }
+  ]
+    },
+    {
       id: -3,
       title: 'Site para Vendas de Landing Page',
       description: 'um site moderno e responsivo para a Vendas de Landing Page, com uma interface elegante que transmite confiança e profissionalismo.',
       period: 'mar de 2025 - mar de 2025',
       association: 'Freelancer',
       image: './src/img/landing-page.png',
-      alt: 'Imagem do site desenvolvido para a Clínica SorriMais',
+      alt: 'Imagem do site desenvolvido para a Vendas de Landing Page',
       details: `Desenvolvi uma landing page estratégica para divulgar meus serviços freelancer de criação de landing pages. Este projeto foi pensado para ser uma ferramenta de marketing digital, apresentando de forma clara e objetiva:
 
 Por que sua empresa precisa de uma Landing Page?
@@ -302,13 +384,95 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
   ];
   const clientProjects = [
     {
+      id: -5,
+      title: 'Site para Chales',
+      description: 'um site moderno e responsivo para a Chales, com uma interface elegante que transmite confiança e profissionalismo.',
+      period: 'mar de 2025 - mar de 2025',
+      association: 'Freelancer',
+      image: './src/img/chales.png',
+      alt: 'Imagem do site desenvolvido para a Chales',
+      details: `É com muita satisfação que apresento o projeto Pousada e Chales, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
+
+🏕️ Por que um site é essencial para uma pousada ou Chales?
+Hoje, mais do que nunca, estar presente no digital não é mais um diferencial, mas sim uma necessidade. O novo site da Pousada oferece:
+
+✅ Design intuitivo e responsivo – Experiência impecável em qualquer dispositivo.
+✅ Maior visibilidade e destaque – Superando a concorrência com um site otimizado para SEO.
+✅ Integração direta com WhatsApp – Facilitando reservas de forma rápida e eficiente.
+✅ Galeria de imagens e depoimentos – Criando credibilidade e atraindo mais hóspedes.
+✅ Performance otimizada – Carregamento rápido e experiência fluida.
+
+💡 O impacto do digital no turismo e hospitalidade
+Com um site bem estruturado, a Pousada agora pode alcançar novos clientes, aumentar a taxa de ocupação e oferecer uma experiência mais profissional e atrativa para quem busca um refúgio na natureza.
+
+🔹 Quer levar o seu negócio para o próximo nível?
+Se você tem um hotel, pousada ou qualquer negócio que precisa de mais presença digital, entre em contato! Juntos, podemos criar uma solução sob medida para você.
+
+📢 E você, o que acha da importância do digital para o setor de turismo? Vamos conversar nos comentários! 👇.
+  
+  Link para acessar: https://pousadabvnoprice.netlify.app/
+  
+  `,
+  skills: [
+    {
+      name: 'React',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+    {
+      name: 'Tailwind CSS',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+    }
+  ]
+    },
+    {
+      id: -4,
+      title: 'Site para Camping',
+      description: 'um site moderno e responsivo para a camping, com uma interface elegante que transmite confiança e profissionalismo.',
+      period: 'mar de 2025 - mar de 2025',
+      association: 'Freelancer',
+      image: './src/img/camping.png',
+      alt: 'Imagem do site desenvolvido para a camping',
+      details: `É com muita satisfação que apresento o projeto Pousada e Camping, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
+
+🏕️ Por que um site é essencial para uma pousada ou camping?
+Hoje, mais do que nunca, estar presente no digital não é mais um diferencial, mas sim uma necessidade. O novo site da Pousada oferece:
+
+✅ Design intuitivo e responsivo – Experiência impecável em qualquer dispositivo.
+✅ Maior visibilidade e destaque – Superando a concorrência com um site otimizado para SEO.
+✅ Integração direta com WhatsApp – Facilitando reservas de forma rápida e eficiente.
+✅ Galeria de imagens e depoimentos – Criando credibilidade e atraindo mais hóspedes.
+✅ Performance otimizada – Carregamento rápido e experiência fluida.
+
+💡 O impacto do digital no turismo e hospitalidade
+Com um site bem estruturado, a Pousada agora pode alcançar novos clientes, aumentar a taxa de ocupação e oferecer uma experiência mais profissional e atrativa para quem busca um refúgio na natureza.
+
+🔹 Quer levar o seu negócio para o próximo nível?
+Se você tem um hotel, pousada ou qualquer negócio que precisa de mais presença digital, entre em contato! Juntos, podemos criar uma solução sob medida para você.
+
+📢 E você, o que acha da importância do digital para o setor de turismo? Vamos conversar nos comentários! 👇.
+  
+  Link para acessar: https://pousadabjnoprice.netlify.app/
+  
+  `,
+  skills: [
+    {
+      name: 'React',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+    {
+      name: 'Tailwind CSS',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+    }
+  ]
+    },
+    {
       id: -3,
       title: 'Site para Vendas de Landing Page',
       description: 'um site moderno e responsivo para a Vendas de Landing Page, com uma interface elegante que transmite confiança e profissionalismo.',
       period: 'mar de 2025 - mar de 2025',
       association: 'Freelancer',
       image: './src/img/landing-page.png',
-      alt: 'Imagem do site desenvolvido para a Clínica SorriMais',
+      alt: 'Imagem do site desenvolvido para a Vendas de Landing Page',
       details: `Desenvolvi uma landing page estratégica para divulgar meus serviços freelancer de criação de landing pages. Este projeto foi pensado para ser uma ferramenta de marketing digital, apresentando de forma clara e objetiva:
 
 Por que sua empresa precisa de uma Landing Page?
