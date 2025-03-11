@@ -507,6 +507,14 @@ class App {
   ) {
     const defaultItems = [
       {
+        text: 'Landing Page Chales',
+        image: './src/img/chales.png'
+      },
+      {
+        text: 'Landing Page Camping',
+        image: './src/img/camping.png'
+      },
+      {
         text: 'Landing Page Vendas',
         image: './src/img/landing-page.png'
       },
