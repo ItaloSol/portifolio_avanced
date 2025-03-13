@@ -22,7 +22,6 @@ function App() {
      
       <ThemeToggle isRecruiter={isRecruiter} onToggle={handleToggle} />
       <FloatingThemeToggle isRecruiter={isRecruiter} onToggle={handleToggle} />
-      {/* Conteúdo abaixo do Header */}
       <div className="relative z-10">
         <Galerya />
         <Projects isRecruiter={isRecruiter} />
