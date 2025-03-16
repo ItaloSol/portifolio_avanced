@@ -1,6 +1,6 @@
 import React from 'react';
 import { AnimatedText } from './AnimatedText';
-import DecryptedText from './DecryptedText/DecryptedText'
+import DecryptedText from './DecryptedText/DecryptedText';
 //import Squares from './Squares';
 import Particles from './Particles/Particles';
 interface HeaderProps {

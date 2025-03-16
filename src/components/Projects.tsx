@@ -1,7 +1,6 @@
 import React from 'react';
 import { ModalProjetos } from './ModalProjetos';
 
-
 interface ProjectsProps {
   isRecruiter: boolean;
 }
@@ -211,6 +210,54 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
       logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
     }
   ]
+    },
+    {
+      id: 1.1,
+      title: 'Portfólio Profissional Interativo',
+      description: 'Experiência personalizada para recrutadores e clientes',
+      period: 'fev de 2025 - fev de 2025',
+      association: 'Projeto Pessoal',
+      image: './src/img/portfolio.jpg',
+      alt: 'Imagem ilustrativa do portfólio online',
+      details: `🚀 Nova versão do meu portfólio online com experiência direcionada para diferentes públicos!
+      🎯 Modo Recrutador e Modo Cliente.
+    
+      Meu portfólio agora é mais do que uma simples apresentação profissional. Com um sistema dinâmico de alteração de modo de visualização, ele atende tanto recrutadores quanto clientes, permitindo uma experiência personalizada.
+    
+      🔹 Principais Funcionalidades:
+      ✅ Modo Recrutador: Exibe meu currículo, competências e projetos, destacando minhas habilidades em front-end e desenvolvimento web.  
+      ✅ Modo Cliente: Apresenta minhas soluções para empresas, redirecionando para o site principal de vendas.  
+      ✅ Design Responsivo: Totalmente adaptável para mobile e desktop.  
+      ✅ Transições dinâmicas entre os modos, garantindo fluidez na navegação.  
+    
+      🔹 Tecnologias utilizadas:
+      ✅ React, Vite  
+      ✅ Tailwind CSS, DaisyUI  
+      ✅ JavaScript, TypeScript  
+      ✅ APIs REST  
+    
+      O resultado é um portfólio moderno, dinâmico e funcional, ampliando minhas oportunidades tanto no mercado de trabalho quanto no universo dos negócios.
+    
+      Link para acessar o projeto: https://italosolportifolio.netlify.app/
+      `,
+      skills: [
+        {
+          name: 'React',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+        },
+        {
+          name: 'Tailwind CSS',
+          logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+        },
+        {
+          name: 'DaisyUI',
+          logo: 'https://daisyui.com/favicon.ico'
+        },
+        {
+          name: 'TypeScript',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+        }
+      ]
     },
     {
       id: 1,
@@ -591,7 +638,54 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
     }
   ]
     },
-  
+    {
+      id: 1.1,
+      title: 'Portfólio Profissional Interativo',
+      description: 'Experiência personalizada para recrutadores e clientes',
+      period: 'fev de 2025 - fev de 2025',
+      association: 'Projeto Pessoal',
+      image: './src/img/portfolio.jpg',
+      alt: 'Imagem ilustrativa do portfólio online',
+      details: `🚀 Nova versão do meu portfólio online com experiência direcionada para diferentes públicos!
+      🎯 Modo Recrutador e Modo Cliente.
+    
+      Meu portfólio agora é mais do que uma simples apresentação profissional. Com um sistema dinâmico de alteração de modo de visualização, ele atende tanto recrutadores quanto clientes, permitindo uma experiência personalizada.
+    
+      🔹 Principais Funcionalidades:
+      ✅ Modo Recrutador: Exibe meu currículo, competências e projetos, destacando minhas habilidades em front-end e desenvolvimento web.  
+      ✅ Modo Cliente: Apresenta minhas soluções para empresas, redirecionando para o site principal de vendas.  
+      ✅ Design Responsivo: Totalmente adaptável para mobile e desktop.  
+      ✅ Transições dinâmicas entre os modos, garantindo fluidez na navegação.  
+    
+      🔹 Tecnologias utilizadas:
+      ✅ React, Vite  
+      ✅ Tailwind CSS, DaisyUI  
+      ✅ JavaScript, TypeScript  
+      ✅ APIs REST  
+    
+      O resultado é um portfólio moderno, dinâmico e funcional, ampliando minhas oportunidades tanto no mercado de trabalho quanto no universo dos negócios.
+    
+      Link para acessar o projeto: https://italosolportifolio.netlify.app/
+      `,
+      skills: [
+        {
+          name: 'React',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+        },
+        {
+          name: 'Tailwind CSS',
+          logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+        },
+        {
+          name: 'DaisyUI',
+          logo: 'https://daisyui.com/favicon.ico'
+        },
+        {
+          name: 'TypeScript',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+        }
+      ]
+    },
     {
       id: 2,
       title: 'Sistema de Gerenciamento e Controle de Produção Gráfica',
@@ -651,11 +745,14 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
   ] 
     }
   ];
+   
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-center">Projetos</h2>
-        <ModalProjetos projects={isRecruiter ? recruiterProjects : clientProjects} />
+    <section className="py-20 relative">
+      <div className="relative z-10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-8 text-center">Projetos</h2>
+          <ModalProjetos projects={isRecruiter ? recruiterProjects : clientProjects} />
+        </div>
       </div>
     </section>
   );
