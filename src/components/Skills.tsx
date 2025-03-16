@@ -1,8 +1,6 @@
 import React from "react";
-import { AnimatedText } from "./AnimatedText";
 import { ScrollFloat } from "./ScrollFloat";
-import LetterGlitch from "./LetterGlitch";
-import Squares from './Squares';
+
 
 interface SkillsProps {
   isRecruiter: boolean;
@@ -15,6 +13,10 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'
     },
     {
+      name: 'Laravel',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/laravel/laravel-line.svg'
+    },
+    {
       name: 'JavaScript',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
     },
@@ -22,13 +24,14 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
       name: 'Vue.js',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg'
     },
-    {
-      name: 'Laravel',
-      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/laravel/laravel-line.svg'
-    },
+    
     {
       name: 'React',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+    {
+      name: 'Next.js',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg'
     },
     {
       name: 'Node.js',
@@ -43,73 +46,73 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg'
     },
     {
+      name: 'MongoDB',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/mongodb/mongodb-original.svg'
+    },
+    {
+      name: 'PostgreSQL',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg'
+    },
+    {
       name: 'API REST',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg'
     },
-    
+    {
+      name: 'Vite',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/vite/vite-original.svg'
+    },
+    {
+      name: 'Boostrap',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/bootstrap/bootstrap-original.svg'
+    },
     {
       name: 'Tailwind CSS',
       logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg'
+    },
+    {
+      name: 'Python',
+      logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/python/python-original.svg'
     }
   ];
   const clientSkills = [
     {
       name: 'Websites Responsivos',
-      logo: ''
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
     },
     {
       name: 'Sistemas Web',
-      logo: '',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg',
     },
     {
       name: 'E-commerce',
-      logo: '',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopware/shopware-original.svg',
     },
     {
       name: 'Aplicações Móveis',
-      logo: '',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg',
     },
     {
       name: 'Integrações API',
-      logo: '',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
     },
     {
       name: 'SEO',
-      logo: '',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg',
     },
     {
       name: 'Performance',
-      logo: '',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg',
     },
     {
       name: 'Segurança',
-      logo: '',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original.svg',
     },
   ];
   const skills = isRecruiter ? recruiterSkills : clientSkills;
   return (
-    <section className="relative py-20 bg-sky-600/70 overflow-hidden">
+    <section className="relative py-20 bg-blue-90 overflow-hidden">
       {/* Efeito LetterGlitch no fundo */}
-      <div className="absolute inset-0 z-0 opacity-50">
-      {isRecruiter &&
-         <Squares 
-            speed={0.5} 
-            squareSize={40}
-            direction='up' // up, down, left, right, diagonal
-            borderColor='#fff'
-            hoverFillColor='#222'
-            />
-      }
-      {/* {isRecruiter &&
-      <LetterGlitch 
-      
-  glitchColors={["#ff0000", "#00ff00", "#0000ff"]} // Adicione cores adequadas
-  glitchSpeed={50}
-  centerVignette={true}
-  outerVignette={false}
-  smooth={true}
-/> } */}
-      </div>
+     
 
       {/* Conteúdo principal */}
       <div className="relative z-10 container mx-auto px-4">
@@ -119,11 +122,11 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
             <ScrollFloat key={index}>
               <div className="bg-opacity-90 bg-gray-900 p-4 rounded-lg text-center">
                 <div className="skill flex flex-col items-center justify-center gap-2 p-3">
-                  {isRecruiter ? ( <> <img 
+                  <img 
                     src={skill.logo} 
                     alt={`${skill.name} logo`} 
                     className="w-12 h-12 sm:w-16 sm:h-16"
-                  /></> ) : ( '' )} 
+                  />
                   <span className="text-sm sm:text-base font-semibold text-white">{skill.name}</span>
                 </div>
               </div>

@@ -10,7 +10,7 @@ import { Header } from './components/Header';
 import { ThemeToggle } from './components/ThemeToggle';
 import { FloatingThemeToggle } from './components/FloatingThemeToggle';
 import { ClientRedirect } from './components/ClientRedirect';
-import Squares from './components/Squares';
+import Lightning from './components/Lightning/Lightning';
 function App() {
   const [isRecruiter, setIsRecruiter] = useState(true);
 
@@ -26,12 +26,26 @@ function App() {
         <Galerya />
         <Projects isRecruiter={isRecruiter} />
         {!isRecruiter && <ClientRedirect />}
-        <AboutMe isRecruiter={isRecruiter} />
-        <Skills isRecruiter={isRecruiter}/>
+        
+        <div className="relative">
+          <div className="absolute inset-0 z-0 opacity-50">
+            {isRecruiter && (
+              <Lightning
+                hue={220}
+                xOffset={0}
+                speed={1}
+                intensity={1}
+                size={1}
+              />
+            )}
+          </div>
+          <AboutMe isRecruiter={isRecruiter} />
+          <Skills isRecruiter={isRecruiter}/>
+        </div>
+
         {isRecruiter && <Experience />}
-      {isRecruiter && <Education />}
-       
-      {isRecruiter &&  <Contact />} 
+        {isRecruiter && <Education />}
+        {isRecruiter && <Contact />}
       </div>
       </div>
   );
