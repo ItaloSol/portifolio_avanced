@@ -110,7 +110,7 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
   ];
   const skills = isRecruiter ? recruiterSkills : clientSkills;
   return (
-    <section className="relative py-20 bg-blue-90 overflow-hidden">
+    <section className="relative py-20 overflow-hidden"> {/* Ensure no bg-* class here */}
       {/* Efeito LetterGlitch no fundo */}
      
 
@@ -120,11 +120,12 @@ export const Skills: React.FC<SkillsProps> = ({ isRecruiter }) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {skills.map((skill, index) => (
             <ScrollFloat key={index}>
-              <div className="bg-opacity-90 bg-gray-900 p-4 rounded-lg text-center">
+              {/* Apply transparent background and neon border to the card */}
+              <div className="bg-black bg-opacity-30 backdrop-blur-sm border border-white rounded-lg shadow-[0_0_5px_rgba(255,255,255,0.5)] p-4 text-center h-full flex flex-col justify-center"> {/* Added h-full flex flex-col justify-center for better alignment */}
                 <div className="skill flex flex-col items-center justify-center gap-2 p-3">
-                  <img 
-                    src={skill.logo} 
-                    alt={`${skill.name} logo`} 
+                  <img
+                    src={skill.logo}
+                    alt={`${skill.name} logo`}
                     className="w-12 h-12 sm:w-16 sm:h-16"
                   />
                   <span className="text-sm sm:text-base font-semibold text-white">{skill.name}</span>

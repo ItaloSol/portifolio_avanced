@@ -508,11 +508,11 @@ class App {
     const defaultItems = [
       {
         text: 'Landing Page Chales',
-        image: './src/img/chales.png'
+        image: './src/img/chales.webp'
       },
       {
         text: 'Landing Page Camping',
-        image: './src/img/camping.png'
+        image: './src/img/camping.webp'
       },
       {
         text: 'Landing Page Vendas',
@@ -520,7 +520,7 @@ class App {
       },
       {
         text: 'Dentista SorrirMais',
-        image: './src/img/dentista.png'
+        image: './src/img/dentista.webp'
       },
       {
         text: 'Pesquisa de Satisfação',
@@ -542,9 +542,49 @@ class App {
         text: 'Sistema de Escala Militar',
         image: './src/img/escala.jpg'
       },
+      {
+        text: 'Site Coopcam',
+        image: './src/img/coopcam-cel.png'
+      },
+      {
+        text: 'Site Millian',
+        image: './src/img/millian-cel.png'
+      },
+      {
+        text: 'Site Consumidor',
+        image: './src/img/consumidor-cel.png'
+      },
+      {
+        text: 'Site Família',
+        image: './src/img/familia-mob.png'
+      },
+      {
+        text: 'Site Bressan',
+        image: './src/img/bressan-mob.png'
+      },
+      {
+        text: 'Site Dentista Mobile',
+        image: './src/img/dentista-mob.png'
+      },
+      {
+        text: 'Site Bio Reino',
+        image: './src/img/bioreino-mob.png'
+      },
+      {
+        text: 'Site FacilZap',
+        image: './src/img/facilzap-mob.png'
+      },
+      {
+        text: 'Site Luanda',
+        image: './src/img/luanda-mob.png'
+      },
+      {
+        text: 'Site Nardini',
+        image: './src/img/nardini-mobile.png'
+      }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
-    this.mediasImages = galleryItems.concat(galleryItems);
+    this.mediasImages = galleryItems.concat(galleryItems); // Duplicate items for seamless loop
     this.medias = this.mediasImages.map((data, index) => {
       return new Media({
         geometry: this.planeGeometry,

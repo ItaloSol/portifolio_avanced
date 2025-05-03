@@ -1,15 +1,14 @@
 import React from 'react';
 import { AnimatedText } from './AnimatedText';
 import { ScrollFloat } from './ScrollFloat';
-import Lightning from './Lightning/Lightning';
 interface AboutMeProps {
   isRecruiter: boolean;
 }
 export const AboutMe: React.FC<AboutMeProps> = ({ isRecruiter }) => {
-  
+
   return (
-   
-    <section className="relative py-20 bg-blue-90 overflow-hidden">
+
+    <section className="relative py-20 overflow-hidden"> {/* Ensure no bg-* class here */}
       {/* Efeito LetterGlitch no fundo */}
       
       <div className="relative z-10 container mx-auto px-4">

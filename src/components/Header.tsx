@@ -2,7 +2,6 @@ import React from 'react';
 import { AnimatedText } from './AnimatedText';
 import DecryptedText from './DecryptedText/DecryptedText';
 //import Squares from './Squares';
-import Particles from './Particles/Particles';
 interface HeaderProps {
   isRecruiter: boolean;
 }
@@ -10,18 +9,7 @@ export const Header: React.FC<HeaderProps> = ({ isRecruiter }) => {
   return (
     <>
     <header className="relative min-h-screen flex items-center justify-center">
-  {/* Partículas no fundo */}
-  <Particles
-    particleColors={['#ffffff', '#ffffff']}
-    particleCount={200}
-    particleSpread={10}
-    speed={0.1}
-    particleBaseSize={100}
-    moveParticlesOnHover={true}
-    alphaParticles={false}
-    disableRotation={false}
-    className="absolute inset-0"
-  />
+ 
 
   {/* Conteúdo do Header */}
   <div className="relative z-10 container mx-auto px-4 text-center">

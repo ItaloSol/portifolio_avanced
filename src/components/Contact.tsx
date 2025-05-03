@@ -7,7 +7,7 @@ import {  Download, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 export const Contact: React.FC = () => {
   return (
     <>
-      <section className="py-20 bg-background">
+      <section className="py-20"> {/* Removed bg-background */}
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-8">Contato</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -75,7 +75,7 @@ export const Contact: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
+      <section className="py-20"> {/* Removed bg-background */}
      
         <div className="container mx-auto px-4 text-center">
         <Magnet padding={2660} disabled={false} magnetStrength={9}>

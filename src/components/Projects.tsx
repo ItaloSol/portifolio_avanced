@@ -8,12 +8,156 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ isRecruiter }) => {
   const recruiterProjects = [
     {
+      id: -6, // Assign a unique negative ID
+      title: 'Site para Bio Reino',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025', // Placeholder
+      association: 'Freelancer',
+      image: './src/img/bioreino-pronto.webp', // Use provided image name
+      alt: 'Imagem do site Bio Reino',
+      details: `Desenvolvimento de um site moderno e responsivo para Bio Reino, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://bioreinooficial.web.app/`, // Placeholder details
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ] // Placeholder skills
+    },
+    {
+      id: -7,
+      title: 'Site para Bressan',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/bressan-Pronto.webp',
+      alt: 'Imagem do site Bressan',
+      details: `Desenvolvimento de um site moderno e responsivo para Bressan, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://advocaciabressanoficial.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -8,
+      title: 'Site para Consumidor', // Assuming a consumer-focused site
+      description: 'Plataforma web moderna e responsiva.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/consumidor-pronto.webp',
+      alt: 'Imagem do site Consumidor',
+      details: `Desenvolvimento de um site moderno e responsivo para Consumidor, focado em apresentar informações ou serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://consumidorsidnei.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -9,
+      title: 'Site para Coopcam',
+      description: 'Site institucional moderno e responsivo para cooperativa.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/coopcam-pronto.webp',
+      alt: 'Imagem do site Coopcam',
+      details: `Desenvolvimento de um site moderno e responsivo para Coopcam, focado em apresentar a cooperativa e seus serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://coopcam-coop.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -11,
+      title: 'Site para FacilZap',
+      description: 'Plataforma web moderna e responsiva.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/facilzap-pronto.webp',
+      alt: 'Imagem do site FacilZap',
+      details: `Desenvolvimento de um site moderno e responsivo para FacilZap, focado em apresentar a ferramenta ou serviço de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://sitefacilzap.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -12,
+      title: 'Site para Família', // Assuming a family-related site
+      description: 'Site moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/familia-pronto.webp',
+      alt: 'Imagem do site Família',
+      details: `Desenvolvimento de um site moderno e responsivo para Família, focado em apresentar informações ou serviços de forma clara e atraente. Otimizado para SEO e performance.
+      
+      Link (Inventários/Sucessões): https://sucessoesnardini.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -13,
+      title: 'Site para Luanda',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/luanda-pronto.webp',
+      alt: 'Imagem do site Luanda',
+      details: `Desenvolvimento de um site moderno e responsivo para Luanda, focado em apresentar a empresa ou serviço de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://luandaribeirohd.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -14,
+      title: 'Site para Nardini',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/nardini-pronto.webp',
+      alt: 'Imagem do site Nardini',
+      details: `Desenvolvimento de um site moderno e responsivo para Nardini, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link (Institucional): https://nardiniadvogados.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -15,
+      title: 'Site para Millian',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/millian-pronto.webp',
+      alt: 'Imagem do site Millian',
+      details: `Desenvolvimento de um site moderno e responsivo para Millian, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://milliancosmetico.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
       id: -5,
       title: 'Site para Chales',
       description: 'um site moderno e responsivo para a Chales, com uma interface elegante que transmite confiança e profissionalismo.',
       period: 'mar de 2025 - mar de 2025',
       association: 'Freelancer',
-      image: './src/img/chales.png',
+      image: './src/img/chales.webp',
       alt: 'Imagem do site desenvolvido para a Chales',
       details: `É com muita satisfação que apresento o projeto Pousada e Chales, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
 
@@ -54,7 +198,7 @@ Se você tem um hotel, pousada ou qualquer negócio que precisa de mais presenç
       description: 'um site moderno e responsivo para a camping, com uma interface elegante que transmite confiança e profissionalismo.',
       period: 'mar de 2025 - mar de 2025',
       association: 'Freelancer',
-      image: './src/img/camping.png',
+      image: './src/img/camping.webp',
       alt: 'Imagem do site desenvolvido para a camping',
       details: `É com muita satisfação que apresento o projeto Pousada e Camping, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
 
@@ -149,7 +293,7 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
       description: 'um site moderno e responsivo para a Clínica de Dentária SorrirMais, com uma interface elegante que transmite confiança e profissionalismo.',
       period: 'fev de 2025 - mar de 2025',
       association: 'Freelancer',
-      image: './src/img/dentista.png',
+      image: './src/img/dentista-pronto.webp',
       alt: 'Imagem do site desenvolvido para a Clínica SorriMais',
       details: `Desenvolvi um site moderno e responsivo para a Clínica de Dentária SorrirMais, com uma interface elegante que transmite confiança e profissionalismo. O projeto teve como objetivo modernizar a presença digital da clínica, facilitando o acesso às informações e convertendo visitantes em clientes, através de um agendamento via WhatsApp simples e intuitivo.
   
@@ -162,7 +306,7 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
   ✔ Maior Alcance Digital: Estratégias digitais que ampliaram a visibilidade da clínica, permitindo um aumento significativo no agendamento de consultas via WhatsApp.
   Esse projeto destaca minha capacidade de integrar design e tecnologia para entregar soluções digitais que impulsionam os resultados e modernizam a presença online dos negócios.
   
-  Link para acessar: https://sorrirmais.netlify.app/
+   Link para acessar: https://sorrirmais-odonto.web.app/
   
   `,
   skills: [
@@ -431,12 +575,172 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
   ];
   const clientProjects = [
     {
+      id: -6, // Assign a unique negative ID
+      title: 'Site para Bio Reino',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025', // Placeholder
+      association: 'Freelancer',
+      image: './src/img/bioreino-pronto.webp', // Use provided image name
+      alt: 'Imagem do site Bio Reino',
+      details: `Desenvolvimento de um site moderno e responsivo para Bio Reino, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://bioreinooficial.web.app/`, // Placeholder details
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ] // Placeholder skills
+    },
+    {
+      id: -7,
+      title: 'Site para Bressan',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/bressan-Pronto.webp',
+      alt: 'Imagem do site Bressan',
+      details: `Desenvolvimento de um site moderno e responsivo para Bressan, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://advocaciabressanoficial.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -8,
+      title: 'Site para Consumidor', // Assuming a consumer-focused site
+      description: 'Plataforma web moderna e responsiva.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/consumidor-pronto.webp',
+      alt: 'Imagem do site Consumidor',
+      details: `Desenvolvimento de um site moderno e responsivo para Consumidor, focado em apresentar informações ou serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://consumidorsidnei.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -9,
+      title: 'Site para Coopcam',
+      description: 'Site institucional moderno e responsivo para cooperativa.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/coopcam-pronto.webp',
+      alt: 'Imagem do site Coopcam',
+      details: `Desenvolvimento de um site moderno e responsivo para Coopcam, focado em apresentar a cooperativa e seus serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://coopcam-coop.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -10,
+      title: 'Site para Dentista',
+      description: 'Site moderno e responsivo para clínica odontológica.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/dentista-pronto.webp',
+      alt: 'Imagem do site Dentista',
+      details: `Desenvolvimento de um site moderno e responsivo para clínica odontológica, focado em apresentar os serviços e facilitar o agendamento. Otimizado para SEO e performance.
+
+      Link para acessar: https://sorrirmais-odonto.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -11,
+      title: 'Site para FacilZap',
+      description: 'Plataforma web moderna e responsiva.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/facilzap-pronto.webp',
+      alt: 'Imagem do site FacilZap',
+      details: `Desenvolvimento de um site moderno e responsivo para FacilZap, focado em apresentar a ferramenta ou serviço de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://sitefacilzap.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -12,
+      title: 'Site para Família', // Assuming a family-related site
+      description: 'Site moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/familia-pronto.webp',
+      alt: 'Imagem do site Família',
+      details: `Desenvolvimento de um site moderno e responsivo para Família, focado em apresentar informações ou serviços de forma clara e atraente. Otimizado para SEO e performance.
+      
+      Link (Inventários/Sucessões): https://sucessoesnardini.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -13,
+      title: 'Site para Luanda',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/luanda-pronto.webp',
+      alt: 'Imagem do site Luanda',
+      details: `Desenvolvimento de um site moderno e responsivo para Luanda, focado em apresentar a empresa ou serviço de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://luandaribeirohd.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -14,
+      title: 'Site para Nardini',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/nardini-pronto.webp',
+      alt: 'Imagem do site Nardini',
+      details: `Desenvolvimento de um site moderno e responsivo para Nardini, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link (Institucional): https://nardiniadvogados.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
+      id: -15,
+      title: 'Site para Millian',
+      description: 'Site institucional moderno e responsivo.',
+      period: 'Abril de 2025',
+      association: 'Freelancer',
+      image: './src/img/millian-pronto.webp',
+      alt: 'Imagem do site Millian',
+      details: `Desenvolvimento de um site moderno e responsivo para Millian, focado em apresentar a empresa e seus produtos/serviços de forma clara e atraente. Otimizado para SEO e performance.
+
+      Link para acessar: https://milliancosmetico.web.app/`,
+      skills: [
+        { name: 'Next.js', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nextjs/nextjs-original.svg' },
+        { name: 'Tailwind CSS', logo: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg' }
+      ]
+    },
+    {
       id: -5,
       title: 'Site para Chales',
       description: 'um site moderno e responsivo para a Chales, com uma interface elegante que transmite confiança e profissionalismo.',
       period: 'mar de 2025 - mar de 2025',
       association: 'Freelancer',
-      image: './src/img/chales.png',
+      image: './src/img/chales.webp',
       alt: 'Imagem do site desenvolvido para a Chales',
       details: `É com muita satisfação que apresento o projeto Pousada e Chales, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
 
@@ -477,7 +781,7 @@ Se você tem um hotel, pousada ou qualquer negócio que precisa de mais presenç
       description: 'um site moderno e responsivo para a camping, com uma interface elegante que transmite confiança e profissionalismo.',
       period: 'mar de 2025 - mar de 2025',
       association: 'Freelancer',
-      image: './src/img/camping.png',
+      image: './src/img/camping.webp',
       alt: 'Imagem do site desenvolvido para a camping',
       details: `É com muita satisfação que apresento o projeto Pousada e Camping, um site moderno e totalmente otimizado para fortalecer a presença digital desse incrível espaço de hospedagem!
 
@@ -615,7 +919,7 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
       id: 3,
       title: 'Portfólio Online para a Grafex',
       description: 'Transformando a Comunicação Digital da Gráfica do Exército',
-      period: '2024',
+      period: 'Abril de 2025',
       association: 'Exército Brasileiro',
       image: './src/img/portifolio.jpg',
       alt: 'Imagem ilustrativa do portfólio online',
@@ -689,7 +993,7 @@ Otimização da experiência do usuário para maximizar a conversão e a captaç
     {
       id: 2,
       title: 'Sistema de Gerenciamento e Controle de Produção Gráfica',
-      period: '2024',
+      period: 'Abril de 2025',
       association: 'Exército Brasileiro',
       image: './src/img/sisgrafex.jpg',
       alt: 'Imagem ilustrativa do sistema SIGRAFEX',

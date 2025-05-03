@@ -8,7 +8,8 @@ export const Experience: React.FC = () => {
       <div className="container mx-auto px-4">
         <ScrollFloat>
           <h2 className="text-4xl font-bold mb-8">Experiência Profissional</h2>
-          <div className="bg-background p-8 rounded-lg">
+          {/* Apply transparent background and neon border to the card */}
+          <div className="bg-black bg-opacity-30 backdrop-blur-sm border border-white rounded-lg shadow-[0_0_5px_rgba(255,255,255,0.5)] p-8"> {/* Updated classes */}
             <AnimatedText
               text="Exército Brasileiro"
               type="split"
